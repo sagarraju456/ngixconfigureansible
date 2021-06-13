@@ -1,5 +1,0 @@
----
-- name: Install Logrotate
-  yum:
-      name: logrotate
-      state: latest

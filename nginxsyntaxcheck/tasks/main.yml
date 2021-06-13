@@ -1,4 +1,0 @@
----
-- name: Check the nginx conf file syntax
-  shell:
-    "sudo nginx -t"

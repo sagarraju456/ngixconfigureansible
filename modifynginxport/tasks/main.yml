@@ -1,7 +1,0 @@
----
-- name: Modify nginx port to 8080
-  replace:
-    path: /etc/nginx/nginx.conf
-    regexp: "80;"
-    replace: "8080;"
-    backup: yes

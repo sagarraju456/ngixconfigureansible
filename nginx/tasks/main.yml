@@ -1,4 +1,0 @@
----
-- name: Install nginx package
-  shell:
-    "amazon-linux-extras install nginx1"
