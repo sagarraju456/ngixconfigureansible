@@ -1,0 +1,16 @@
+---
+- name: sample book
+  vars:
+    max_log_size: 100
+  hosts: ansible_hosts
+  remote_user: ec2-user
+  become: yes
+  roles:
+    - nginx 
+    - startnginx
+    - docker
+    - logrotate
+    - modifynginxport
+    - nginxsyntaxcheck    
+    - restartnginx
+    - configlogrotate
