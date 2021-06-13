@@ -1,8 +1,7 @@
 Step 1: Created an ec2 linux instance from aws (fre tier)
         In this we have spinned up the instance and made few configs changes like enabling ICMP4 in inbound rules, inside the security groups of aws.
         Verified below: (By default the ping wont work for an aws instance)
-        ansible all -i hosts -m ping
-        Normal ping also giving data
+        ansible all -i hosts -m ping and Normal ping also giving proper response.
         
 Step 2: Installed nginx, docker, logrotate by using below roles for modularity:
         ROLES USED --> docker, logrotate, nginx (nginx role has aws installer command, due to some issue yum and apt didnt work, tried both)
