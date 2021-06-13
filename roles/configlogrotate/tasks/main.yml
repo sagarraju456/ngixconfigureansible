@@ -1,0 +1,8 @@
+---
+- name: Add size limit for ngix log in logrotate
+  lineinfile:
+    path: /etc/logrotate.d/nginx
+    insertafter: "daily"
+    line: "    size 100M"
+    firstmatch: yes
+    state: present
